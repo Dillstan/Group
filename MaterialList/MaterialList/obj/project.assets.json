@@ -8,26 +8,23 @@
     "net7.0-windows7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\cokerd\\.nuget\\packages\\": {},
-    "C:\\Program Files\\DevExpress 23.1\\Components\\Offline Packages": {},
+    "C:\\Users\\slpar\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\cokerd\\Documents\\GitHub\\Group\\MaterialList\\MaterialList\\MaterialList.csproj",
+      "projectUniqueName": "C:\\Users\\slpar\\Source\\Repos\\Group\\MaterialList\\MaterialList\\MaterialList.csproj",
       "projectName": "MaterialList",
-      "projectPath": "C:\\Users\\cokerd\\Documents\\GitHub\\Group\\MaterialList\\MaterialList\\MaterialList.csproj",
-      "packagesPath": "C:\\Users\\cokerd\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\cokerd\\Documents\\GitHub\\Group\\MaterialList\\MaterialList\\obj\\",
+      "projectPath": "C:\\Users\\slpar\\Source\\Repos\\Group\\MaterialList\\MaterialList\\MaterialList.csproj",
+      "packagesPath": "C:\\Users\\slpar\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\slpar\\Source\\Repos\\Group\\MaterialList\\MaterialList\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files\\DevExpress 23.1\\Components\\Offline Packages",
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\cokerd\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 23.1.config",
+        "C:\\Users\\slpar\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -36,7 +33,6 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\DevExpress 23.1\\Components\\System\\Components\\Packages": {},
         "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
@@ -50,6 +46,11 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -74,7 +75,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }
