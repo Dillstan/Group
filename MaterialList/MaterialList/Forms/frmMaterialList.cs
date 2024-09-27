@@ -12,17 +12,16 @@ namespace MaterialList.Forms
 {
     public partial class frmMaterialList : Form
     {
-        private List<ItemInfo> _Items = new List<ItemInfo>() { };
-        private BindingSource bind = new BindingSource();
+        private BindingList<ItemInfo> _Items = new BindingList<ItemInfo>() { };
         public frmMaterialList()
         {
             InitializeComponent();
-            RefreshGrid();
         }
 
         private void BtnCalculate_Click(object sender, EventArgs e)
         {
             //Run Calculations
+
         }
 
         private void btnSave_Click(object sender, EventArgs e)
@@ -35,17 +34,17 @@ namespace MaterialList.Forms
         private void btnClear_Click(object sender, EventArgs e)
         {
             //Clear List
-            bind.DataSource = null;
-            dataGridView1.DataSource = null;
             _Items.Clear();
-            RefreshGrid();
         }
 
-        private void RefreshGrid()
+        private void frmMaterialList_Load(object sender, EventArgs e)
         {
-            bind.DataSource = _Items;
-            dataGridView1.DataSource = bind;
-            dataGridView1.Refresh();
+            itemInfoBindingSource.DataSource = _Items;
+        }
+
+        private void itemInfoBindingSource_DataSourceChanged(object sender, EventArgs e)
+        {
+         //   textBox1.Text = $"Total: {_Items.Select(x => x.ExtPrice).Sum()}";
         }
     }
 }

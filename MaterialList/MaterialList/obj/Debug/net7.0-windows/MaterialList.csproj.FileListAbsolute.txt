@@ -16,3 +16,14 @@ C:\Users\cokerd\Documents\GitHub\Group\MaterialList\MaterialList\obj\Debug\net7.
 C:\Users\cokerd\Documents\GitHub\Group\MaterialList\MaterialList\obj\Debug\net7.0-windows\MaterialList.genruntimeconfig.cache
 C:\Users\cokerd\Documents\GitHub\Group\MaterialList\MaterialList\obj\Debug\net7.0-windows\ref\MaterialList.dll
 C:\Users\cokerd\Documents\GitHub\Group\MaterialList\MaterialList\obj\Debug\net7.0-windows\MaterialList.Forms.dlgAddItem.resources
+C:\Users\cokerd\OneDrive - Zimmer Biomet\Documents\GitHub\Group\MaterialList\MaterialList\obj\Debug\net7.0-windows\MaterialList.csproj.AssemblyReference.cache
+C:\Users\cokerd\OneDrive - Zimmer Biomet\Documents\GitHub\Group\MaterialList\MaterialList\obj\Debug\net7.0-windows\MaterialList.Forms.dlgAddItem.resources
+C:\Users\cokerd\OneDrive - Zimmer Biomet\Documents\GitHub\Group\MaterialList\MaterialList\obj\Debug\net7.0-windows\MaterialList.Forms.frmMaterialList.resources
+C:\Users\cokerd\OneDrive - Zimmer Biomet\Documents\GitHub\Group\MaterialList\MaterialList\obj\Debug\net7.0-windows\MaterialList.csproj.GenerateResource.cache
+C:\Users\cokerd\OneDrive - Zimmer Biomet\Documents\GitHub\Group\MaterialList\MaterialList\obj\Debug\net7.0-windows\MaterialList.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\cokerd\OneDrive - Zimmer Biomet\Documents\GitHub\Group\MaterialList\MaterialList\obj\Debug\net7.0-windows\MaterialList.AssemblyInfoInputs.cache
+C:\Users\cokerd\OneDrive - Zimmer Biomet\Documents\GitHub\Group\MaterialList\MaterialList\obj\Debug\net7.0-windows\MaterialList.AssemblyInfo.cs
+C:\Users\cokerd\OneDrive - Zimmer Biomet\Documents\GitHub\Group\MaterialList\MaterialList\obj\Debug\net7.0-windows\MaterialList.csproj.CoreCompileInputs.cache
+C:\Users\cokerd\OneDrive - Zimmer Biomet\Documents\GitHub\Group\MaterialList\MaterialList\obj\Debug\net7.0-windows\MaterialList.dll
+C:\Users\cokerd\OneDrive - Zimmer Biomet\Documents\GitHub\Group\MaterialList\MaterialList\obj\Debug\net7.0-windows\refint\MaterialList.dll
+C:\Users\cokerd\OneDrive - Zimmer Biomet\Documents\GitHub\Group\MaterialList\MaterialList\obj\Debug\net7.0-windows\MaterialList.pdb

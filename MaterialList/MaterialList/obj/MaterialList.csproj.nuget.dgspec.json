@@ -1,6 +1,7 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
     "C:\\Users\\slpar\\Source\\Repos\\Group\\MaterialList\\MaterialList\\MaterialList.csproj": {}
   },
   "projects": {
@@ -12,6 +13,19 @@
         "projectPath": "C:\\Users\\slpar\\Source\\Repos\\Group\\MaterialList\\MaterialList\\MaterialList.csproj",
         "packagesPath": "C:\\Users\\slpar\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\slpar\\Source\\Repos\\Group\\MaterialList\\MaterialList\\obj\\",
+=======
+    "C:\\Users\\cokerd\\OneDrive - Zimmer Biomet\\Documents\\GitHub\\Group\\MaterialList\\MaterialList\\MaterialList.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\cokerd\\OneDrive - Zimmer Biomet\\Documents\\GitHub\\Group\\MaterialList\\MaterialList\\MaterialList.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\cokerd\\OneDrive - Zimmer Biomet\\Documents\\GitHub\\Group\\MaterialList\\MaterialList\\MaterialList.csproj",
+        "projectName": "MaterialList",
+        "projectPath": "C:\\Users\\cokerd\\OneDrive - Zimmer Biomet\\Documents\\GitHub\\Group\\MaterialList\\MaterialList\\MaterialList.csproj",
+        "packagesPath": "C:\\Users\\cokerd\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\cokerd\\OneDrive - Zimmer Biomet\\Documents\\GitHub\\Group\\MaterialList\\MaterialList\\obj\\",
+>>>>>>> 1c220bc7026e81a48a5d39c3457afabf145bfd85
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

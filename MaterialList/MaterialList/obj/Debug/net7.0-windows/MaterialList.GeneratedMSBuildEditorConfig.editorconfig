@@ -14,6 +14,10 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = MaterialList
+<<<<<<< HEAD
 build_property.ProjectDir = C:\Users\slpar\Source\Repos\Group\MaterialList\MaterialList\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
+=======
+build_property.ProjectDir = C:\Users\cokerd\OneDrive - Zimmer Biomet\Documents\GitHub\Group\MaterialList\MaterialList\
+>>>>>>> 1c220bc7026e81a48a5d39c3457afabf145bfd85
