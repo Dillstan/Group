@@ -1,19 +1,6 @@
 {
   "format": 1,
   "restore": {
-<<<<<<< HEAD
-    "C:\\Users\\slpar\\Source\\Repos\\Group\\MaterialList\\MaterialList\\MaterialList.csproj": {}
-  },
-  "projects": {
-    "C:\\Users\\slpar\\Source\\Repos\\Group\\MaterialList\\MaterialList\\MaterialList.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\slpar\\Source\\Repos\\Group\\MaterialList\\MaterialList\\MaterialList.csproj",
-        "projectName": "MaterialList",
-        "projectPath": "C:\\Users\\slpar\\Source\\Repos\\Group\\MaterialList\\MaterialList\\MaterialList.csproj",
-        "packagesPath": "C:\\Users\\slpar\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\slpar\\Source\\Repos\\Group\\MaterialList\\MaterialList\\obj\\",
-=======
     "C:\\Users\\cokerd\\OneDrive - Zimmer Biomet\\Documents\\GitHub\\Group\\MaterialList\\MaterialList\\MaterialList.csproj": {}
   },
   "projects": {
@@ -25,13 +12,14 @@
         "projectPath": "C:\\Users\\cokerd\\OneDrive - Zimmer Biomet\\Documents\\GitHub\\Group\\MaterialList\\MaterialList\\MaterialList.csproj",
         "packagesPath": "C:\\Users\\cokerd\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\cokerd\\OneDrive - Zimmer Biomet\\Documents\\GitHub\\Group\\MaterialList\\MaterialList\\obj\\",
->>>>>>> 1c220bc7026e81a48a5d39c3457afabf145bfd85
         "projectStyle": "PackageReference",
         "fallbackFolders": [
+          "C:\\Program Files\\DevExpress 23.1\\Components\\Offline Packages",
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\slpar\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\cokerd\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 23.1.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -40,6 +28,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\DevExpress 23.1\\Components\\System\\Components\\Packages": {},
           "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
@@ -53,11 +42,6 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -82,7 +66,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     }

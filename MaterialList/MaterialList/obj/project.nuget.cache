@@ -1,14 +1,15 @@
 {
   "version": 2,
-<<<<<<< HEAD
-  "dgSpecHash": "v1g4R5V3VxE=",
-  "success": true,
-  "projectFilePath": "C:\\Users\\slpar\\Source\\Repos\\Group\\MaterialList\\MaterialList\\MaterialList.csproj",
-=======
   "dgSpecHash": "6vaCmFY8HAk3o8lvrwkw6AmrTQFzLq1J+uLwfII527y6a6ss1WDLlV3cmQNM0UTk1lVqyn/qRX2bhvAoqU4cZg==",
   "success": true,
   "projectFilePath": "C:\\Users\\cokerd\\OneDrive - Zimmer Biomet\\Documents\\GitHub\\Group\\MaterialList\\MaterialList\\MaterialList.csproj",
->>>>>>> 1c220bc7026e81a48a5d39c3457afabf145bfd85
   "expectedPackageFiles": [],
-  "logs": []
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file C:\\Users\\cokerd\\OneDrive - Zimmer Biomet\\Documents\\GitHub\\Group\\MaterialList\\MaterialList\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }
