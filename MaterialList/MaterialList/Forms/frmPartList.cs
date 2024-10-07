@@ -8,6 +8,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Microsoft.Office.Interop.Excel;
+
 
 namespace MaterialList
 {
@@ -41,7 +43,7 @@ namespace MaterialList
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
-            if(BomItems != null || BomItems.Count > 0)
+            if (BomItems != null || BomItems.Count > 0)
                 BomItems.Remove((ItemInfo)itemInfoBindingSource.Current);
         }
 
@@ -74,13 +76,13 @@ namespace MaterialList
                 itemMaster.Add(item);
             }
             RefreshBindings();*/
-            
+
             OpenFileDialog matl = new OpenFileDialog();
             matl.Filter = "Excel Sheet(*.xlsx)|*.xlsx|All Files(*.*)|*.*";
             if (matl.ShowDialog() == DialogResult.OK)
             {
                 string filePath = matl.FileName;
-                lblPath.Text = filePath;
+              //  lblPath.Text = filePath;
                 Part_List(filePath, ".xlsx", "yes");
             }
         }
@@ -96,20 +98,20 @@ namespace MaterialList
             try
             {
                 xlapp = new Microsoft.Office.Interop.Excel.Application();
-                xlworkbook = xlapp.Workbooks.Open(lblPath.Text);
-                xlworksheet = xlworkbook.Worksheets["Sheet1"];
-                xlrange = xlworksheet.UsedRange;
+          //      xlworkbook = xlapp.Workbooks.Open(lblPath.Text);
+            //    xlworksheet = (Microsoft.Office.Interop.Excel.Worksheet)xlworkbook.Worksheets["Sheet1"];
+//                xlrange = xlworksheet.UsedRange;
 
-                dgvParts.ColumnCount = xlrange.Columns.Count;
+  //              grdItems.ColumnCount = xlrange.Columns.Count;
 
                 //Adding the header rows and populating the data
-                for (int xlrow = 1; xlrow < xlrange.Rows.Count; xlrow++)
+        //        for (int xlrow = 1; xlrow < xlrange.Rows.Count; xlrow++)
                 {
-                    dgvParts.Rows.Add(xlrange.Cells[xlrow, 1].Text, xlrange.Cells[xlrow, 2].Text, xlrange.Cells[xlrow, 3].Text, xlrange.Cells[xlrow, 4].Text, xlrange.Cells[xlrow, 5].Text, xlrange.Cells[xlrow, 6].Text);
+    //                dgvParts.Rows.Add(xlrange.Cells[xlrow, 1].Text, xlrange.Cells[xlrow, 2].Text, xlrange.Cells[xlrow, 3].Text, xlrange.Cells[xlrow, 4].Text, xlrange.Cells[xlrow, 5].Text, xlrange.Cells[xlrow, 6].Text);
                 }
 
                 //Closing the workbook and the excel application
-                xlworkbook.Close();
+                //xlworkbook.Close();
                 xlapp.Quit();
 
             }
@@ -122,7 +124,7 @@ namespace MaterialList
 
         private void btnClear_Click(object sender, EventArgs e)
         {
-            dgvParts.Rows.Clear();
+      //      dgvParts.Rows.Clear();
         }
 
         //Exiting the application
