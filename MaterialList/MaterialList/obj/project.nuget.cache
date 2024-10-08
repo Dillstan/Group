@@ -1,17 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "OeA6LlJWheg=",
+  "dgSpecHash": "1c/1NltWhxolX1FrkwAHkuI+F4PhhemF/dgKrXMiEDou0zXndlAHOQAMFEuBHN41/IN46BOZtD+aJypGzYp6yA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\slpar\\Documents\\Code\\DillonsRepo\\MaterialList\\MaterialList\\MaterialList.csproj",
+  "projectFilePath": "C:\\Users\\cokerd\\OneDrive - Zimmer Biomet\\Documents\\GitHub\\Group\\MaterialList\\MaterialList\\MaterialList.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\slpar\\.nuget\\packages\\microsoft.office.interop.excel\\15.0.4795.1001\\microsoft.office.interop.excel.15.0.4795.1001.nupkg.sha512"
+    "C:\\Users\\cokerd\\.nuget\\packages\\microsoft.office.interop.excel\\15.0.4795.1001\\microsoft.office.interop.excel.15.0.4795.1001.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problem reading the cache file C:\\Users\\slpar\\Documents\\Code\\DillonsRepo\\MaterialList\\MaterialList\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  "logs": []
 }
