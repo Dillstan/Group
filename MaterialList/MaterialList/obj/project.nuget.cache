@@ -1,8 +1,17 @@
 {
   "version": 2,
-  "dgSpecHash": "uPi6FKwvL8w=",
+  "dgSpecHash": "OeA6LlJWheg=",
   "success": true,
   "projectFilePath": "C:\\Users\\slpar\\Documents\\Code\\DillonsRepo\\MaterialList\\MaterialList\\MaterialList.csproj",
-  "expectedPackageFiles": [],
-  "logs": []
+  "expectedPackageFiles": [
+    "C:\\Users\\slpar\\.nuget\\packages\\microsoft.office.interop.excel\\15.0.4795.1001\\microsoft.office.interop.excel.15.0.4795.1001.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file C:\\Users\\slpar\\Documents\\Code\\DillonsRepo\\MaterialList\\MaterialList\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }
