@@ -5,38 +5,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{F67A3B11-7D3C-4E0B-8CB7-D4E969890C5A}|MaterialList\\MaterialList.csproj|c:\\users\\slpar\\documents\\code\\dillonsrepo\\materiallist\\materiallist\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F67A3B11-7D3C-4E0B-8CB7-D4E969890C5A}|MaterialList\\MaterialList.csproj|solutionrelative:materiallist\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F67A3B11-7D3C-4E0B-8CB7-D4E969890C5A}|MaterialList\\MaterialList.csproj|c:\\users\\slpar\\documents\\code\\dillonsrepo\\materiallist\\materiallist\\extramethods.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F67A3B11-7D3C-4E0B-8CB7-D4E969890C5A}|MaterialList\\MaterialList.csproj|solutionrelative:materiallist\\extramethods.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F67A3B11-7D3C-4E0B-8CB7-D4E969890C5A}|MaterialList\\MaterialList.csproj|c:\\users\\slpar\\documents\\code\\dillonsrepo\\materiallist\\materiallist\\forms\\frmpartlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F67A3B11-7D3C-4E0B-8CB7-D4E969890C5A}|MaterialList\\MaterialList.csproj|solutionrelative:materiallist\\forms\\frmpartlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F67A3B11-7D3C-4E0B-8CB7-D4E969890C5A}|MaterialList\\MaterialList.csproj|C:\\Users\\slpar\\Documents\\Code\\DillonsRepo\\MaterialList\\materiallist\\forms\\frmpartlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{F67A3B11-7D3C-4E0B-8CB7-D4E969890C5A}|MaterialList\\MaterialList.csproj|solutionrelative:materiallist\\forms\\frmpartlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F67A3B11-7D3C-4E0B-8CB7-D4E969890C5A}|MaterialList\\MaterialList.csproj|c:\\users\\slpar\\documents\\code\\dillonsrepo\\materiallist\\materiallist\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F67A3B11-7D3C-4E0B-8CB7-D4E969890C5A}|MaterialList\\MaterialList.csproj|solutionrelative:materiallist\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F67A3B11-7D3C-4E0B-8CB7-D4E969890C5A}|MaterialList\\MaterialList.csproj|C:\\Users\\slpar\\Documents\\Code\\DillonsRepo\\MaterialList\\materiallist\\forms\\frmmateriallist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{F67A3B11-7D3C-4E0B-8CB7-D4E969890C5A}|MaterialList\\MaterialList.csproj|solutionrelative:materiallist\\forms\\frmmateriallist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F67A3B11-7D3C-4E0B-8CB7-D4E969890C5A}|MaterialList\\MaterialList.csproj|c:\\users\\slpar\\documents\\code\\dillonsrepo\\materiallist\\materiallist\\materiallist.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
-      "RelativeMoniker": "D:0:0:{F67A3B11-7D3C-4E0B-8CB7-D4E969890C5A}|MaterialList\\MaterialList.csproj|solutionrelative:materiallist\\materiallist.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F67A3B11-7D3C-4E0B-8CB7-D4E969890C5A}|MaterialList\\MaterialList.csproj|c:\\users\\slpar\\documents\\code\\dillonsrepo\\materiallist\\materiallist\\forms\\dlgadditem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F67A3B11-7D3C-4E0B-8CB7-D4E969890C5A}|MaterialList\\MaterialList.csproj|solutionrelative:materiallist\\forms\\dlgadditem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F67A3B11-7D3C-4E0B-8CB7-D4E969890C5A}|MaterialList\\MaterialList.csproj|C:\\Users\\slpar\\Documents\\Code\\DillonsRepo\\MaterialList\\materiallist\\forms\\dlgadditem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{F67A3B11-7D3C-4E0B-8CB7-D4E969890C5A}|MaterialList\\MaterialList.csproj|solutionrelative:materiallist\\forms\\dlgadditem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,8 +14,12 @@
       "DocumentGroups": [
         {
           "DockedHeight": 311,
-          "SelectedChildIndex": 17,
+          "SelectedChildIndex": 11,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{4a9b7e51-aa16-11d0-a8c5-00a0c921a4d2}"
@@ -90,90 +62,6 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "frmPartList.cs",
-              "DocumentMoniker": "C:\\Users\\slpar\\Documents\\Code\\DillonsRepo\\MaterialList\\MaterialList\\Forms\\frmPartList.cs",
-              "RelativeDocumentMoniker": "MaterialList\\Forms\\frmPartList.cs",
-              "ToolTip": "C:\\Users\\slpar\\Documents\\Code\\DillonsRepo\\MaterialList\\MaterialList\\Forms\\frmPartList.cs",
-              "RelativeToolTip": "MaterialList\\Forms\\frmPartList.cs",
-              "ViewState": "AgIAAC4AAAAAAAAAAAAcwEEAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-06T18:44:43.99Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "frmPartList.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\slpar\\Documents\\Code\\DillonsRepo\\MaterialList\\MaterialList\\Forms\\frmPartList.cs",
-              "RelativeDocumentMoniker": "MaterialList\\Forms\\frmPartList.cs",
-              "ToolTip": "C:\\Users\\slpar\\Documents\\Code\\DillonsRepo\\MaterialList\\MaterialList\\Forms\\frmPartList.cs [Design]",
-              "RelativeToolTip": "MaterialList\\Forms\\frmPartList.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-06T18:44:30.149Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "MaterialList",
-              "DocumentMoniker": "C:\\Users\\slpar\\Documents\\Code\\DillonsRepo\\MaterialList\\MaterialList\\MaterialList.csproj",
-              "RelativeDocumentMoniker": "MaterialList\\MaterialList.csproj",
-              "ToolTip": "C:\\Users\\slpar\\Documents\\Code\\DillonsRepo\\MaterialList\\MaterialList\\MaterialList.csproj",
-              "RelativeToolTip": "MaterialList\\MaterialList.csproj",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-09-14T20:50:26.736Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "dlgAddItem.cs",
-              "DocumentMoniker": "C:\\Users\\slpar\\Documents\\Code\\DillonsRepo\\MaterialList\\MaterialList\\Forms\\dlgAddItem.cs",
-              "RelativeDocumentMoniker": "MaterialList\\Forms\\dlgAddItem.cs",
-              "ToolTip": "C:\\Users\\slpar\\Documents\\Code\\DillonsRepo\\MaterialList\\MaterialList\\Forms\\dlgAddItem.cs",
-              "RelativeToolTip": "MaterialList\\Forms\\dlgAddItem.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAxAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-06T08:04:49.286Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "dlgAddItem.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\slpar\\Documents\\Code\\DillonsRepo\\MaterialList\\MaterialList\\Forms\\dlgAddItem.cs",
-              "RelativeDocumentMoniker": "MaterialList\\Forms\\dlgAddItem.cs",
-              "ToolTip": "C:\\Users\\cokerd\\Documents\\GitHub\\Group\\MaterialList\\MaterialList\\Forms\\dlgAddItem.cs [Design]",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\cokerd\\Documents\\GitHub\\Group\\MaterialList\\MaterialList\\Forms\\dlgAddItem.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
-              "WhenOpened": "2024-09-06T08:04:49.853Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\slpar\\Documents\\Code\\DillonsRepo\\MaterialList\\MaterialList\\Program.cs",
-              "RelativeDocumentMoniker": "MaterialList\\Program.cs",
-              "ToolTip": "C:\\Users\\slpar\\Documents\\Code\\DillonsRepo\\MaterialList\\MaterialList\\Program.cs",
-              "RelativeToolTip": "MaterialList\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-06T08:04:49.854Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ExtraMethods.cs",
-              "DocumentMoniker": "C:\\Users\\slpar\\Documents\\Code\\DillonsRepo\\MaterialList\\MaterialList\\ExtraMethods.cs",
-              "RelativeDocumentMoniker": "MaterialList\\ExtraMethods.cs",
-              "ToolTip": "C:\\Users\\slpar\\Documents\\Code\\DillonsRepo\\MaterialList\\MaterialList\\ExtraMethods.cs",
-              "RelativeToolTip": "MaterialList\\ExtraMethods.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-06T08:04:49.856Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Item.cs",
               "DocumentMoniker": "C:\\Users\\slpar\\Documents\\Code\\DillonsRepo\\MaterialList\\MaterialList\\Item.cs",
@@ -184,17 +72,6 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-06T08:04:49.858Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "frmMaterialList.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\slpar\\Documents\\Code\\DillonsRepo\\MaterialList\\MaterialList\\Forms\\frmMaterialList.cs",
-              "RelativeDocumentMoniker": "MaterialList\\Forms\\frmMaterialList.cs",
-              "ToolTip": "C:\\Users\\slpar\\source\\repos\\Group\\MaterialList\\MaterialList\\Forms\\frmMaterialList.cs [Design]",
-              "RelativeToolTip": "..\\..\\..\\..\\source\\repos\\Group\\MaterialList\\MaterialList\\Forms\\frmMaterialList.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-06T08:04:49.863Z"
             }
           ]
         },

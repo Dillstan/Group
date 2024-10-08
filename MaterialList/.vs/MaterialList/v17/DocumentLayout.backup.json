@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\slpar\\Documents\\Code\\DillonsRepo\\MaterialList\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F67A3B11-7D3C-4E0B-8CB7-D4E969890C5A}|MaterialList\\MaterialList.csproj|c:\\users\\slpar\\documents\\code\\dillonsrepo\\materiallist\\materiallist\\iteminfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F67A3B11-7D3C-4E0B-8CB7-D4E969890C5A}|MaterialList\\MaterialList.csproj|solutionrelative:materiallist\\iteminfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F67A3B11-7D3C-4E0B-8CB7-D4E969890C5A}|MaterialList\\MaterialList.csproj|c:\\users\\slpar\\documents\\code\\dillonsrepo\\materiallist\\materiallist\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F67A3B11-7D3C-4E0B-8CB7-D4E969890C5A}|MaterialList\\MaterialList.csproj|solutionrelative:materiallist\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F67A3B11-7D3C-4E0B-8CB7-D4E969890C5A}|MaterialList\\MaterialList.csproj|c:\\users\\slpar\\documents\\code\\dillonsrepo\\materiallist\\materiallist\\extramethods.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F67A3B11-7D3C-4E0B-8CB7-D4E969890C5A}|MaterialList\\MaterialList.csproj|solutionrelative:materiallist\\extramethods.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F67A3B11-7D3C-4E0B-8CB7-D4E969890C5A}|MaterialList\\MaterialList.csproj|c:\\users\\slpar\\documents\\code\\dillonsrepo\\materiallist\\materiallist\\forms\\frmpartlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F67A3B11-7D3C-4E0B-8CB7-D4E969890C5A}|MaterialList\\MaterialList.csproj|solutionrelative:materiallist\\forms\\frmpartlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F67A3B11-7D3C-4E0B-8CB7-D4E969890C5A}|MaterialList\\MaterialList.csproj|c:\\users\\slpar\\documents\\code\\dillonsrepo\\materiallist\\materiallist\\forms\\frmpartlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{F67A3B11-7D3C-4E0B-8CB7-D4E969890C5A}|MaterialList\\MaterialList.csproj|C:\\Users\\slpar\\Documents\\Code\\DillonsRepo\\MaterialList\\materiallist\\forms\\frmpartlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{F67A3B11-7D3C-4E0B-8CB7-D4E969890C5A}|MaterialList\\MaterialList.csproj|solutionrelative:materiallist\\forms\\frmpartlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F67A3B11-7D3C-4E0B-8CB7-D4E969890C5A}|MaterialList\\MaterialList.csproj|c:\\users\\slpar\\documents\\code\\dillonsrepo\\materiallist\\materiallist\\extramethods.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F67A3B11-7D3C-4E0B-8CB7-D4E969890C5A}|MaterialList\\MaterialList.csproj|solutionrelative:materiallist\\extramethods.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F67A3B11-7D3C-4E0B-8CB7-D4E969890C5A}|MaterialList\\MaterialList.csproj|c:\\users\\slpar\\documents\\code\\dillonsrepo\\materiallist\\materiallist\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -90,7 +90,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "frmPartList.cs",
               "DocumentMoniker": "C:\\Users\\slpar\\Documents\\Code\\DillonsRepo\\MaterialList\\MaterialList\\Forms\\frmPartList.cs",
               "RelativeDocumentMoniker": "MaterialList\\Forms\\frmPartList.cs",
@@ -103,15 +103,14 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "frmPartList.cs [Design]",
               "DocumentMoniker": "C:\\Users\\slpar\\Documents\\Code\\DillonsRepo\\MaterialList\\MaterialList\\Forms\\frmPartList.cs",
               "RelativeDocumentMoniker": "MaterialList\\Forms\\frmPartList.cs",
               "ToolTip": "C:\\Users\\slpar\\Documents\\Code\\DillonsRepo\\MaterialList\\MaterialList\\Forms\\frmPartList.cs [Design]",
               "RelativeToolTip": "MaterialList\\Forms\\frmPartList.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-06T18:44:30.149Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-10-06T18:44:30.149Z"
             },
             {
               "$type": "Document",
@@ -162,7 +161,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "ExtraMethods.cs",
               "DocumentMoniker": "C:\\Users\\slpar\\Documents\\Code\\DillonsRepo\\MaterialList\\MaterialList\\ExtraMethods.cs",
               "RelativeDocumentMoniker": "MaterialList\\ExtraMethods.cs",
@@ -176,12 +175,12 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ItemInfo.cs",
-              "DocumentMoniker": "C:\\Users\\slpar\\Documents\\Code\\DillonsRepo\\MaterialList\\MaterialList\\ItemInfo.cs",
-              "RelativeDocumentMoniker": "MaterialList\\ItemInfo.cs",
-              "ToolTip": "C:\\Users\\slpar\\Documents\\Code\\DillonsRepo\\MaterialList\\MaterialList\\ItemInfo.cs",
-              "RelativeToolTip": "MaterialList\\ItemInfo.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Title": "Item.cs",
+              "DocumentMoniker": "C:\\Users\\slpar\\Documents\\Code\\DillonsRepo\\MaterialList\\MaterialList\\Item.cs",
+              "RelativeDocumentMoniker": "MaterialList\\Item.cs",
+              "ToolTip": "C:\\Users\\slpar\\Documents\\Code\\DillonsRepo\\MaterialList\\MaterialList\\Item.cs",
+              "RelativeToolTip": "MaterialList\\Item.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-06T08:04:49.858Z",
               "EditorCaption": ""
