@@ -6,16 +6,18 @@ using System.Threading.Tasks;
 
 namespace MaterialList
 {
-    public class ItemInfo
+    public class BomItem : Item
     {
-        public ItemInfo()
+        private List<Item> alternates;
+
+        public BomItem()
         {
         }
 
-        public string Name { get; set; }
-        public string Description { get; set; }
+
         public int Quantity { get; set; }
-        public decimal UnitPrice { get; set; }
+        public List<Item> Alternates { get => alternates; set => alternates = value; }
+
         public decimal ExtPrice { get { return UnitPrice * Quantity; } }
     }
 }

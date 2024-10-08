@@ -27,3 +27,22 @@ C:\Users\cokerd\OneDrive - Zimmer Biomet\Documents\GitHub\Group\MaterialList\Mat
 C:\Users\cokerd\OneDrive - Zimmer Biomet\Documents\GitHub\Group\MaterialList\MaterialList\obj\Debug\net7.0-windows\MaterialList.dll
 C:\Users\cokerd\OneDrive - Zimmer Biomet\Documents\GitHub\Group\MaterialList\MaterialList\obj\Debug\net7.0-windows\refint\MaterialList.dll
 C:\Users\cokerd\OneDrive - Zimmer Biomet\Documents\GitHub\Group\MaterialList\MaterialList\obj\Debug\net7.0-windows\MaterialList.pdb
+C:\Users\slpar\Documents\Code\DillonsRepo\MaterialList\MaterialList\bin\Debug\net7.0-windows\MaterialList.exe
+C:\Users\slpar\Documents\Code\DillonsRepo\MaterialList\MaterialList\bin\Debug\net7.0-windows\MaterialList.deps.json
+C:\Users\slpar\Documents\Code\DillonsRepo\MaterialList\MaterialList\bin\Debug\net7.0-windows\MaterialList.runtimeconfig.json
+C:\Users\slpar\Documents\Code\DillonsRepo\MaterialList\MaterialList\bin\Debug\net7.0-windows\MaterialList.dll
+C:\Users\slpar\Documents\Code\DillonsRepo\MaterialList\MaterialList\bin\Debug\net7.0-windows\MaterialList.pdb
+C:\Users\slpar\Documents\Code\DillonsRepo\MaterialList\MaterialList\obj\Debug\net7.0-windows\MaterialList.Forms.dlgAddItem.resources
+C:\Users\slpar\Documents\Code\DillonsRepo\MaterialList\MaterialList\obj\Debug\net7.0-windows\MaterialList.Forms.frmMaterialList.resources
+C:\Users\slpar\Documents\Code\DillonsRepo\MaterialList\MaterialList\obj\Debug\net7.0-windows\MaterialList.frmBOM.resources
+C:\Users\slpar\Documents\Code\DillonsRepo\MaterialList\MaterialList\obj\Debug\net7.0-windows\MaterialList.csproj.GenerateResource.cache
+C:\Users\slpar\Documents\Code\DillonsRepo\MaterialList\MaterialList\obj\Debug\net7.0-windows\MaterialList.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\slpar\Documents\Code\DillonsRepo\MaterialList\MaterialList\obj\Debug\net7.0-windows\MaterialList.AssemblyInfoInputs.cache
+C:\Users\slpar\Documents\Code\DillonsRepo\MaterialList\MaterialList\obj\Debug\net7.0-windows\MaterialList.AssemblyInfo.cs
+C:\Users\slpar\Documents\Code\DillonsRepo\MaterialList\MaterialList\obj\Debug\net7.0-windows\MaterialList.csproj.CoreCompileInputs.cache
+C:\Users\slpar\Documents\Code\DillonsRepo\MaterialList\MaterialList\obj\Debug\net7.0-windows\MaterialList.sourcelink.json
+C:\Users\slpar\Documents\Code\DillonsRepo\MaterialList\MaterialList\obj\Debug\net7.0-windows\MaterialList.dll
+C:\Users\slpar\Documents\Code\DillonsRepo\MaterialList\MaterialList\obj\Debug\net7.0-windows\refint\MaterialList.dll
+C:\Users\slpar\Documents\Code\DillonsRepo\MaterialList\MaterialList\obj\Debug\net7.0-windows\MaterialList.pdb
+C:\Users\slpar\Documents\Code\DillonsRepo\MaterialList\MaterialList\obj\Debug\net7.0-windows\MaterialList.genruntimeconfig.cache
+C:\Users\slpar\Documents\Code\DillonsRepo\MaterialList\MaterialList\obj\Debug\net7.0-windows\ref\MaterialList.dll
