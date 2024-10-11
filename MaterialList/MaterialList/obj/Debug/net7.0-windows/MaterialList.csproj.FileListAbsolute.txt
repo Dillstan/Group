@@ -46,3 +46,4 @@ C:\Users\slpar\Documents\Code\DillonsRepo\MaterialList\MaterialList\obj\Debug\ne
 C:\Users\slpar\Documents\Code\DillonsRepo\MaterialList\MaterialList\obj\Debug\net7.0-windows\MaterialList.pdb
 C:\Users\slpar\Documents\Code\DillonsRepo\MaterialList\MaterialList\obj\Debug\net7.0-windows\MaterialList.genruntimeconfig.cache
 C:\Users\slpar\Documents\Code\DillonsRepo\MaterialList\MaterialList\obj\Debug\net7.0-windows\ref\MaterialList.dll
+C:\Users\slpar\Documents\Code\DillonsRepo\MaterialList\MaterialList\obj\Debug\net7.0-windows\MaterialList.csproj.AssemblyReference.cache
