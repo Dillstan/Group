@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -41,6 +42,17 @@ namespace MaterialList
         }
         #endregion
 
+        public static void SaveToCSV(Bom BomData, string filePath)
+        {
+            // Do the thing
 
+
+        }
+
+        public static Bom OpenCSV(string filePath)
+        {
+            Bom bom = new Bom();
+            return bom;
+        }
     }
 }
