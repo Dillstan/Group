@@ -15,8 +15,8 @@ namespace MaterialList
 {
     public partial class frmBOM : Form
     {
-        BindingList<ItemInfo> itemMaster = new BindingList<ItemInfo>();
-        BindingList<ItemInfo> BomItems = new BindingList<ItemInfo>();
+        BindingList<Item> itemMaster = new BindingList<Item>();
+        BindingList<BomItem> BomItems = new BindingList<BomItem>();
 
 
         public frmBOM()
@@ -31,9 +31,7 @@ namespace MaterialList
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            ItemInfo item = new ItemInfo();
-            //TODO populate fields based on what is in combo boxes
-            BomItems.Add(item);
+
         }
 
         private void btnEdit_Click(object sender, EventArgs e)
@@ -44,7 +42,7 @@ namespace MaterialList
         private void btnDelete_Click(object sender, EventArgs e)
         {
             if (BomItems != null || BomItems.Count > 0)
-                BomItems.Remove((ItemInfo)itemInfoBindingSource.Current);
+                BomItems.Remove((BomItem)itemInfoBindingSource.Current);
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -77,54 +75,22 @@ namespace MaterialList
             }
             RefreshBindings();*/
 
-            OpenFileDialog matl = new OpenFileDialog();
-            matl.Filter = "Excel Sheet(*.xlsx)|*.xlsx|All Files(*.*)|*.*";
-            if (matl.ShowDialog() == DialogResult.OK)
+            using (OpenFileDialog matl = new OpenFileDialog())
             {
-                string filePath = matl.FileName;
-              //  lblPath.Text = filePath;
-                Part_List(filePath, ".xlsx", "yes");
-            }
-        }
-
-        //Using the form this will open the excel application, open the workbook that was opened from the dialog window, select everything on the sheet1, and then add it to the data grid
-        public void Part_List(string fpath, string ext, string hdr)
-        {
-            Microsoft.Office.Interop.Excel.Application xlapp;
-            Microsoft.Office.Interop.Excel.Workbook xlworkbook;
-            Microsoft.Office.Interop.Excel.Worksheet xlworksheet;
-            Microsoft.Office.Interop.Excel.Range xlrange;
-
-            try
-            {
-                xlapp = new Microsoft.Office.Interop.Excel.Application();
-          //      xlworkbook = xlapp.Workbooks.Open(lblPath.Text);
-            //    xlworksheet = (Microsoft.Office.Interop.Excel.Worksheet)xlworkbook.Worksheets["Sheet1"];
-//                xlrange = xlworksheet.UsedRange;
-
-  //              grdItems.ColumnCount = xlrange.Columns.Count;
-
-                //Adding the header rows and populating the data
-        //        for (int xlrow = 1; xlrow < xlrange.Rows.Count; xlrow++)
+                matl.Filter = "Excel Sheet(*.xlsx)|*.xlsx|All Files(*.*)|*.*";
+                if (matl.ShowDialog() == DialogResult.OK)
                 {
-    //                dgvParts.Rows.Add(xlrange.Cells[xlrow, 1].Text, xlrange.Cells[xlrow, 2].Text, xlrange.Cells[xlrow, 3].Text, xlrange.Cells[xlrow, 4].Text, xlrange.Cells[xlrow, 5].Text, xlrange.Cells[xlrow, 6].Text);
+                    string filePath = matl.FileName;
+                    lblPath.Text = filePath;
                 }
-
-                //Closing the workbook and the excel application
-                //xlworkbook.Close();
-                xlapp.Quit();
-
             }
-            //Showing any error messages
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
+
+            PartList();
         }
 
         private void btnClear_Click(object sender, EventArgs e)
         {
-      //      dgvParts.Rows.Clear();
+            grdItems.Rows.Clear();
         }
 
         //Exiting the application
@@ -155,6 +121,55 @@ namespace MaterialList
             cmbPartNo.Items.Clear();
             cmbClass.Items.Clear();
             cmbClass.Items.AddRange(itemMaster.Select(x => x.Name).ToArray());
+        }
+
+
+        //Using the form this will open the excel application, open the workbook that was opened from the dialog window, select everything on the sheet1, and then add it to the data grid
+        public void PartList()
+        {
+            Microsoft.Office.Interop.Excel.Application xlapp;
+            Microsoft.Office.Interop.Excel.Workbook xlworkbook;
+            Microsoft.Office.Interop.Excel.Worksheet xlworksheet;
+            Microsoft.Office.Interop.Excel.Range xlrange;
+
+            try
+            {
+                xlapp = new Microsoft.Office.Interop.Excel.Application();
+                xlworkbook = xlapp.Workbooks.Open(lblPath.Text);
+                xlworksheet = (Microsoft.Office.Interop.Excel.Worksheet)xlworkbook.Worksheets["Sheet1"];
+                xlrange = xlworksheet.UsedRange;
+
+                grdItems.ColumnCount = xlrange.Columns.Count;
+
+                //Adding the header rows and populating the data
+                for (int xlrow = 1; xlrow < xlrange.Rows.Count; xlrow++)
+                {
+                    Item newItem = new Item();
+                    //grdItems.Rows.Add(xlrange.Cells[xlrow, 1].Text, xlrange.Cells[xlrow, 2].Text, xlrange.Cells[xlrow, 3].Text, xlrange.Cells[xlrow, 4].Text, xlrange.Cells[xlrow, 5].Text, xlrange.Cells[xlrow, 6].Text);
+
+                    if (Enum.TryParse(xlrange.Cells[xlrow, 0].ToString(), out Category cat))
+                    {
+                        newItem.ItemCategory = cat;
+                        long.TryParse(xlrange.Cells[xlrow, 1].ToString(), out long id);
+                        newItem.ItemID = id;
+                        newItem.Material = xlrange.Cells[xlrow, 2].ToString();
+                        newItem.Description = xlrange.Cells[xlrow, 3].ToString();
+                        decimal.TryParse(xlrange.Cells[xlrow, 4].ToString(), out decimal price);
+                        newItem.UnitPrice = price;
+                        itemMaster.Add(newItem);
+                    }
+                }
+
+                //Closing the workbook and the excel application
+                //xlworkbook.Close();
+                xlapp.Quit();
+
+            }
+            //Showing any error messages
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }
