@@ -4,9 +4,6 @@
     <Compile Update="Forms\dlgAddItem.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Forms\frmMaterialList.cs">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Update="Forms\frmPartList.cs">
       <SubType>Form</SubType>
     </Compile>

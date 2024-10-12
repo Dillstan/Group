@@ -12,7 +12,6 @@ namespace MaterialList.Forms
 {
     public partial class dlgAddItem : Form
     {
-        public ItemInfo NewItem = new ItemInfo();
         public dlgAddItem()
         {
             InitializeComponent();

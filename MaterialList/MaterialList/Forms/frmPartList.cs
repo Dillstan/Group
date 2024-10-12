@@ -8,15 +8,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Microsoft.Office.Interop.Excel;
 
 
 namespace MaterialList
 {
     public partial class frmBOM : Form
     {
-        BindingList<ItemInfo> itemMaster = new BindingList<ItemInfo>();
-        BindingList<ItemInfo> BomItems = new BindingList<ItemInfo>();
+        BindingList<Item> itemMaster = new BindingList<Item>();
+        BindingList<BomItem> BomItems = new BindingList<BomItem>();
 
 
         public frmBOM()
@@ -26,135 +25,147 @@ namespace MaterialList
 
         private void frmBOM_Load(object sender, EventArgs e)
         {
-
+            RefreshBindings();
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            ItemInfo item = new ItemInfo();
-            //TODO populate fields based on what is in combo boxes
-            BomItems.Add(item);
+            //Create new BomItem
+            var bomItem = new BomItem();
+
+            if (bomItem == null)
+                return;
+
+            Enum.TryParse(typeof(Category), cmbCategory.Text, true, out object? cat);
+
+            if (cat == null)
+                return;
+
+            var category = (Category)cat;
+            if (!long.TryParse(cmbPartNo.Text, out long i))
+                return;
+            var item = itemMaster.Where(x => x.ItemID == i && x.ItemCategory == category).FirstOrDefault();
+
+            bomItem.ItemID = item.ItemID;
+            bomItem.ItemCategory = item.ItemCategory;
+            bomItem.Material = item.Material;
+            bomItem.UnitPrice = item.UnitPrice;
+            bomItem.Description = item.Description;
+            bomItem.Name = item.Name;
+            int.TryParse(txtQuantity.Text, out int quantity);
+            bomItem.Quantity = quantity;
+
+            BomItems.Add(bomItem);
+
+            grdBom.Refresh();
         }
 
         private void btnEdit_Click(object sender, EventArgs e)
         {
+            //Confirm edit
+            DialogResult dlgRes = MessageBox.Show("Are you sure you would like to update the selected row", "Update Confirm", MessageBoxButtons.YesNo);
 
+            if (dlgRes == DialogResult.No) return;
+
+            //Edit current item
+            var bomItem = (BomItem)itemInfoBindingSource.Current;
+            if (bomItem == null)
+                return;
+
+            Enum.TryParse(typeof(Category), cmbCategory.Text, true, out object? cat);
+
+            if (cat == null)
+                return;
+
+            var category = (Category)cat;
+            if (!long.TryParse(cmbPartNo.Text, out long i))
+                return;
+            var item = itemMaster.Where(x => x.ItemID == i && x.ItemCategory == category).FirstOrDefault();
+
+            bomItem.ItemID = item.ItemID;
+            bomItem.ItemCategory = item.ItemCategory;
+            bomItem.Material = item.Material;
+            bomItem.UnitPrice = item.UnitPrice;
+            bomItem.Description = item.Description;
+            bomItem.Name = item.Name;
+            int.TryParse(txtQuantity.Text, out int quantity);
+            bomItem.Quantity = quantity;
+
+            grdBom.Refresh();
         }
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
+            //confirm delete
+            DialogResult dlgRes = MessageBox.Show("Are you sure you would like to delete the selected row", "Delete Confirm", MessageBoxButtons.YesNo);
+            if (dlgRes == DialogResult.No) return;
+
+            //delete selected item
             if (BomItems != null || BomItems.Count > 0)
-                BomItems.Remove((ItemInfo)itemInfoBindingSource.Current);
-        }
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
+                BomItems.Remove((BomItem)itemInfoBindingSource.Current);
         }
 
         private void btnPrint_Click(object sender, EventArgs e)
         {
-            //TODO - Logic for export here, Scott
+            //export to a CSV file
+            using (FolderBrowserDialog matl = new FolderBrowserDialog())
+            {
+                if (matl.ShowDialog() == DialogResult.OK)
+                {
+                    //Create Bom to send to method
+                    Bom mainBom = new Bom();
+                    mainBom.Customer = "Test Customer";
+                    mainBom.Employee = "Dat Employee";
+                    mainBom.BomItems = BomItems.ToList();
+                    ExtraMethods.SaveToCSV(mainBom, matl.SelectedPath);
+                }
+            }
         }
 
         private void cmbClass_SelectedIndexChanged(object sender, EventArgs e)
         {
-            //TODO - update this too
-            cmbPartNo.Items.AddRange(itemMaster.Where(x => x.Name == cmbClass.Text).Select(x => x.Name).ToArray());
+            //show the parts for the category
+            cmbPartNo.Items.Clear();
+            cmbPartNo.Text = "";
+            var x = itemMaster.Where(x => x.ItemCategory == (Category)Enum.Parse(typeof(Category), cmbCategory.Text)).Select(x => x.ItemID.ToString()).Distinct();
+            cmbPartNo.Items.AddRange(x.ToArray());
         }
 
         private void btnImport_Click(object sender, EventArgs e)
         {
-            //TODO - Add the new fields/item class
-            /*foreach (var row in ExtraMethods.ClipBoardDataParsed(5))
+            //get file
+            using (OpenFileDialog matl = new OpenFileDialog())
             {
-                ItemInfo item = new ItemInfo();
-                item.Name = row[0];
-                item.Description = row[1];
-                if (int.TryParse(row[2], out int cost))
-                    item.UnitPrice = cost;
-                itemMaster.Add(item);
-            }
-            RefreshBindings();*/
-
-            OpenFileDialog matl = new OpenFileDialog();
-            matl.Filter = "Excel Sheet(*.xlsx)|*.xlsx|All Files(*.*)|*.*";
-            if (matl.ShowDialog() == DialogResult.OK)
-            {
-                string filePath = matl.FileName;
-              //  lblPath.Text = filePath;
-                Part_List(filePath, ".xlsx", "yes");
-            }
-        }
-
-        //Using the form this will open the excel application, open the workbook that was opened from the dialog window, select everything on the sheet1, and then add it to the data grid
-        public void Part_List(string fpath, string ext, string hdr)
-        {
-            Microsoft.Office.Interop.Excel.Application xlapp;
-            Microsoft.Office.Interop.Excel.Workbook xlworkbook;
-            Microsoft.Office.Interop.Excel.Worksheet xlworksheet;
-            Microsoft.Office.Interop.Excel.Range xlrange;
-
-            try
-            {
-                xlapp = new Microsoft.Office.Interop.Excel.Application();
-          //      xlworkbook = xlapp.Workbooks.Open(lblPath.Text);
-            //    xlworksheet = (Microsoft.Office.Interop.Excel.Worksheet)xlworkbook.Worksheets["Sheet1"];
-//                xlrange = xlworksheet.UsedRange;
-
-  //              grdItems.ColumnCount = xlrange.Columns.Count;
-
-                //Adding the header rows and populating the data
-        //        for (int xlrow = 1; xlrow < xlrange.Rows.Count; xlrow++)
+                if (matl.ShowDialog() == DialogResult.OK)
                 {
-    //                dgvParts.Rows.Add(xlrange.Cells[xlrow, 1].Text, xlrange.Cells[xlrow, 2].Text, xlrange.Cells[xlrow, 3].Text, xlrange.Cells[xlrow, 4].Text, xlrange.Cells[xlrow, 5].Text, xlrange.Cells[xlrow, 6].Text);
+                    string filePath = matl.FileName;
+                    lblPath.Text = filePath;
                 }
-
-                //Closing the workbook and the excel application
-                //xlworkbook.Close();
-                xlapp.Quit();
-
             }
-            //Showing any error messages
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-        }
 
-        private void btnClear_Click(object sender, EventArgs e)
-        {
-      //      dgvParts.Rows.Clear();
-        }
+            //set item master and refresh bindings
+            itemMaster = ExtraMethods.OpenCSV(lblPath.Text);
 
-        //Exiting the application
-        private void btnExit_Click(object sender, EventArgs e)
-        {
-            if (MessageBox.Show("This will close down the whole application. Confirm?", "Close Application", MessageBoxButtons.YesNo) == DialogResult.Yes)
-            {
-                MessageBox.Show("The application has been closed successfully.", "Application Closed!", MessageBoxButtons.OK);
-                System.Windows.Forms.Application.Exit();
-            }
-            else
-            {
-                this.Activate();
-            }
+            RefreshBindings();
         }
 
         private void btnClearlList_Click(object sender, EventArgs e)
         {
+            //clear and refresh the item master
             itemMaster.Clear();
             RefreshBindings();
         }
 
         public void RefreshBindings()
         {
-            //TODO - update to correct information
+            //Refresh everything
             itemInfoBindingSource.DataSource = BomItems;
             itemMasterBindingSource.DataSource = itemMaster;
             cmbPartNo.Items.Clear();
-            cmbClass.Items.Clear();
-            cmbClass.Items.AddRange(itemMaster.Select(x => x.Name).ToArray());
+            cmbCategory.Items.Clear();
+            cmbPartNo.Text = "";
+            cmbCategory.Text = "";
+            cmbCategory.Items.AddRange(itemMaster.Select(x => x.ItemCategory.ToString()).Distinct().ToArray());
         }
     }
 }
