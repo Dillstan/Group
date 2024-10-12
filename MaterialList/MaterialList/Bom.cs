@@ -25,13 +25,13 @@ namespace MaterialList
 
         public void SaveToCsv(string filePath)
         {
-            
-            using (StreamWriter writer = new StreamWriter(filePath))
+            filePath += $@"\MaterialList.csv";
+            using (StreamWriter writer = new StreamWriter(new FileStream(filePath, FileMode.Create, FileAccess.Write)))
             {
 
                 writer.WriteLine("ItemID,Name,Category,Material,Description,UnitPrice,Quantity,ExtPrice");
 
-                
+
                 foreach (var bomItem in BomItems)
                 {
                     writer.WriteLine($"{bomItem.ItemID}," +
