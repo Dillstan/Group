@@ -77,7 +77,7 @@ namespace MaterialList
             // 
             appPartLIst.Controls.Add(tbBOM);
             appPartLIst.Controls.Add(tabItemMaster);
-            appPartLIst.Location = new Point(14, 14);
+            appPartLIst.Location = new Point(15, 15);
             appPartLIst.Margin = new Padding(4, 3, 4, 3);
             appPartLIst.Name = "appPartLIst";
             appPartLIst.SelectedIndex = 0;

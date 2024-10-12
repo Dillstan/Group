@@ -46,27 +46,28 @@ namespace MaterialList
         }
         #endregion
 
-        public static void SaveToCSV(Bom BomData, string filePath)
-        {
-            // Do the thing
+        //public static void SaveToCSV(Bom BomData, string filePath)
+        //{
+        //    // Do the thing
 
-        }
+        //}
 
  
-
+        // OpenCsv Method to read the CSV file and return a binding list of items to populate
+        // the Material List.
         public static BindingList<Item> OpenCsv(string filePath)
         {
             BindingList<Item> items = new BindingList<Item>();
 
             using (StreamReader reader = new StreamReader(filePath))
             {
-                
+                // We dont need the header line so it is read but unused here. 
                 string headerLine = reader.ReadLine();
 
                 string recordIn = reader.ReadLine();
                 while ((recordIn != null))
                 {
-                    string[] values = recordIn.Split(',');
+                    string[] values = recordIn.Split(','); // split the line on '.' into an array of strings
 
                     Item item = new Item
                     {
@@ -79,6 +80,7 @@ namespace MaterialList
                     };
 
                     items.Add(item);
+                    recordIn = reader.ReadLine();
                 }
             }
 

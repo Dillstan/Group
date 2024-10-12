@@ -396,3 +396,27 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+/MaterialList/.vs/MaterialList/v17/.futdcache.v2
+/MaterialList/.vs/MaterialList/v17/.suo
+/MaterialList/.vs/MaterialList/v17/DocumentLayout.backup.json
+/MaterialList/.vs/MaterialList/v17/DocumentLayout.json
+/MaterialList/.vs/ProjectEvaluation/materiallist.strings.v9.bin
+/MaterialList/MaterialList/bin/Debug/net7.0-windows/MaterialList.dll
+/MaterialList/MaterialList/bin/Debug/net7.0-windows/MaterialList.exe
+/MaterialList/MaterialList/bin/Debug/net7.0-windows/MaterialList.pdb
+/MaterialList/MaterialList/bin/Debug/net7.0-windows/MaterialList.runtimeconfig.json
+/MaterialList/MaterialList/obj/project.nuget.cache
+/MaterialList/MaterialList/obj/Debug/net7.0-windows/apphost.exe
+/MaterialList/MaterialList/obj/Debug/net7.0-windows/MaterialList.AssemblyInfoInputs.cache
+/MaterialList/MaterialList/obj/Debug/net7.0-windows/MaterialList.assets.cache
+/MaterialList/MaterialList/obj/Debug/net7.0-windows/MaterialList.dll
+/MaterialList/MaterialList/obj/project.assets.json
+/MaterialList/MaterialList/obj/MaterialList.csproj.nuget.g.props
+/MaterialList/MaterialList/obj/MaterialList.csproj.nuget.dgspec.json
+/MaterialList/MaterialList/obj/Debug/net7.0-windows/MaterialList.sourcelink.json
+/MaterialList/MaterialList/obj/Debug/net7.0-windows/MaterialList.pdb
+/MaterialList/MaterialList/obj/Debug/net7.0-windows/MaterialList.genruntimeconfig.cache
+/MaterialList/MaterialList/obj/Debug/net7.0-windows/MaterialList.GeneratedMSBuildEditorConfig.editorconfig
+/MaterialList/MaterialList/obj/Debug/net7.0-windows/MaterialList.csproj.CoreCompileInputs.cache
+/MaterialList/MaterialList/obj/Debug/net7.0-windows/refint/MaterialList.dll
+/MaterialList/MaterialList/obj/Debug/net7.0-windows/ref/MaterialList.dll
