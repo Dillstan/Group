@@ -14,9 +14,9 @@ namespace MaterialList
 {
     public partial class frmBOM : Form
     {
-        BindingList<Item> itemMaster = new BindingList<Item>();
-        BindingList<BomItem> BomItems = new BindingList<BomItem>();
-
+        //Form Variables
+        private BindingList<Item> itemMaster = new BindingList<Item>();
+        private BindingList<BomItem> bomItems = new BindingList<BomItem>();
 
         public frmBOM()
         {
@@ -55,7 +55,7 @@ namespace MaterialList
             int.TryParse(txtQuantity.Text, out int quantity);
             bomItem.Quantity = quantity;
 
-            BomItems.Add(bomItem);
+            bomItems.Add(bomItem);
 
             grdBom.Refresh();
 
@@ -63,7 +63,7 @@ namespace MaterialList
             cmbPartNo.Text = "";
             txtQuantity.Text = "";
 
-            txtTotal.Text = "$" + BomItems.Select(x => x.ExtPrice).Sum().ToString();
+            txtTotal.Text = "$" + bomItems.Select(x => x.ExtPrice).Sum().ToString();
         }
 
         private void btnEdit_Click(object sender, EventArgs e)
@@ -104,7 +104,7 @@ namespace MaterialList
             txtQuantity.Text = "";
 
             //sum the ext price
-            txtTotal.Text = "$" + BomItems.Select(x => x.ExtPrice).Sum().ToString();
+            txtTotal.Text = "$" + bomItems.Select(x => x.ExtPrice).Sum().ToString();
         }
 
         private void btnDelete_Click(object sender, EventArgs e)
@@ -114,11 +114,11 @@ namespace MaterialList
             if (dlgRes == DialogResult.No) return;
 
             //delete selected item
-            if (BomItems != null || BomItems.Count > 0)
-                BomItems.Remove((BomItem)itemInfoBindingSource.Current);
+            if (bomItems != null || bomItems.Count > 0)
+                bomItems.Remove((BomItem)itemInfoBindingSource.Current);
 
-            if (BomItems != null || BomItems.Count > 0)
-                txtTotal.Text = "$" + BomItems.Select(x => x.Quantity).Sum().ToString();
+            if (bomItems != null || bomItems.Count > 0)
+                txtTotal.Text = "$" + bomItems.Select(x => x.Quantity).Sum().ToString();
             else
                 txtTotal.Text = "$0";
         }
@@ -134,7 +134,7 @@ namespace MaterialList
                     Bom mainBom = new Bom();
                     mainBom.Customer = "Test Customer";
                     mainBom.Employee = "Dat Employee";
-                    mainBom.BomItems = BomItems.ToList();
+                    mainBom.BomItems = bomItems.ToList();
                     mainBom.SaveToCsv(matl.SelectedPath);
                 }
             }
@@ -177,7 +177,7 @@ namespace MaterialList
         public void RefreshBindings()
         {
             //Refresh everything
-            itemInfoBindingSource.DataSource = BomItems;
+            itemInfoBindingSource.DataSource = bomItems;
             itemMasterBindingSource.DataSource = itemMaster;
             cmbPartNo.Items.Clear();
             cmbCategory.Items.Clear();
@@ -188,10 +188,12 @@ namespace MaterialList
 
         private void btnClearBom_Click(object sender, EventArgs e)
         {
+            //confirm clear
             DialogResult dlgRes = MessageBox.Show("Are you sure you would like to clear the current BOM?", "Clear Confirm", MessageBoxButtons.YesNo);
             if (dlgRes == DialogResult.No) return;
 
-            BomItems.Clear();
+            //do the clear
+            bomItems.Clear();
             txtTotal.Text = "$0";
         }
     }
