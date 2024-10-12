@@ -25,12 +25,12 @@ namespace MaterialList
 
         public void SaveToCsv(string filePath)
         {
-            filePath += $@"\MaterialList.csv";
+            Random random = new Random();
+            filePath += $@"\MaterialList_{DateTime.Now.ToString("yyyy-mm-dd_hh-mm-ss")}.csv";
             using (StreamWriter writer = new StreamWriter(new FileStream(filePath, FileMode.Create, FileAccess.Write)))
             {
 
                 writer.WriteLine("ItemID,Name,Category,Material,Description,UnitPrice,Quantity,ExtPrice");
-
 
                 foreach (var bomItem in BomItems)
                 {

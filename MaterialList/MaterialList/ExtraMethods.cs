@@ -64,7 +64,7 @@ namespace MaterialList
                 string headerLine = reader.ReadLine();
 
                 string recordIn = reader.ReadLine();
-                while ((recordIn != null))
+                while (recordIn != null)
                 {
                     string[] values = recordIn.Split(',');
 
@@ -79,6 +79,8 @@ namespace MaterialList
                     };
 
                     items.Add(item);
+
+                    recordIn = reader.ReadLine();
                 }
             }
 

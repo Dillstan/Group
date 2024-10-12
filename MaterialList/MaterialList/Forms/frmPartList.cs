@@ -58,6 +58,12 @@ namespace MaterialList
             BomItems.Add(bomItem);
 
             grdBom.Refresh();
+
+            cmbCategory.Text = "";
+            cmbPartNo.Text = "";
+            txtQuantity.Text = "";
+
+            txtTotal.Text = "$" + BomItems.Select(x => x.ExtPrice).Sum().ToString();
         }
 
         private void btnEdit_Click(object sender, EventArgs e)
@@ -92,6 +98,13 @@ namespace MaterialList
             bomItem.Quantity = quantity;
 
             grdBom.Refresh();
+
+            cmbCategory.Text = "";
+            cmbPartNo.Text = "";
+            txtQuantity.Text = "";
+
+            //sum the ext price
+            txtTotal.Text = "$" + BomItems.Select(x => x.ExtPrice).Sum().ToString();
         }
 
         private void btnDelete_Click(object sender, EventArgs e)
@@ -103,6 +116,11 @@ namespace MaterialList
             //delete selected item
             if (BomItems != null || BomItems.Count > 0)
                 BomItems.Remove((BomItem)itemInfoBindingSource.Current);
+
+            if (BomItems != null || BomItems.Count > 0)
+                txtTotal.Text = "$" + BomItems.Select(x => x.Quantity).Sum().ToString();
+            else
+                txtTotal.Text = "$0";
         }
 
         private void btnPrint_Click(object sender, EventArgs e)
@@ -117,7 +135,6 @@ namespace MaterialList
                     mainBom.Customer = "Test Customer";
                     mainBom.Employee = "Dat Employee";
                     mainBom.BomItems = BomItems.ToList();
-                    // ExtraMethods.SaveToCSV(mainBom, matl.SelectedPath);
                     mainBom.SaveToCsv(matl.SelectedPath);
                 }
             }
@@ -167,6 +184,15 @@ namespace MaterialList
             cmbPartNo.Text = "";
             cmbCategory.Text = "";
             cmbCategory.Items.AddRange(itemMaster.Select(x => x.ItemCategory.ToString()).Distinct().ToArray());
+        }
+
+        private void btnClearBom_Click(object sender, EventArgs e)
+        {
+            DialogResult dlgRes = MessageBox.Show("Are you sure you would like to clear the current BOM?", "Clear Confirm", MessageBoxButtons.YesNo);
+            if (dlgRes == DialogResult.No) return;
+
+            BomItems.Clear();
+            txtTotal.Text = "$0";
         }
     }
 }
