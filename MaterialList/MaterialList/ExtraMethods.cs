@@ -1,9 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Diagnostics;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace MaterialList
 {
@@ -46,13 +49,24 @@ namespace MaterialList
         {
             // Do the thing
 
-
         }
 
-        public static Bom OpenCSV(string filePath)
+        public static BindingList<Item> OpenCSV(string filePath)
         {
-            Bom bom = new Bom();
-            return bom;
+            //Bom bom = new Bom();
+            //return bom;
+            BindingList<Item> items = new BindingList<Item>();
+
+            //change this to whatever, just an idea of what to do.
+            //foreach(var row in csvFile) 
+            {
+                Item item = new Item();
+                //set item fields
+                
+                items.Add(item);
+            }             
+
+            return items;
         }
     }
 }

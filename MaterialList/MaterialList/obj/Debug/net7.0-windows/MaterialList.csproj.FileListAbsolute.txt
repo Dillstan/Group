@@ -40,7 +40,6 @@ C:\Users\cokerd\OneDrive - Zimmer Biomet\Documents\GitHub\Group\MaterialList\Mat
 C:\Users\cokerd\OneDrive - Zimmer Biomet\Documents\GitHub\Group\MaterialList\MaterialList\bin\Debug\net7.0-windows\MaterialList.runtimeconfig.json
 C:\Users\cokerd\OneDrive - Zimmer Biomet\Documents\GitHub\Group\MaterialList\MaterialList\bin\Debug\net7.0-windows\MaterialList.dll
 C:\Users\cokerd\OneDrive - Zimmer Biomet\Documents\GitHub\Group\MaterialList\MaterialList\bin\Debug\net7.0-windows\MaterialList.pdb
-C:\Users\cokerd\OneDrive - Zimmer Biomet\Documents\GitHub\Group\MaterialList\MaterialList\bin\Debug\net7.0-windows\Microsoft.Office.Interop.Excel.dll
 C:\Users\cokerd\OneDrive - Zimmer Biomet\Documents\GitHub\Group\MaterialList\MaterialList\obj\Debug\net7.0-windows\MaterialList.csproj.AssemblyReference.cache
 C:\Users\cokerd\OneDrive - Zimmer Biomet\Documents\GitHub\Group\MaterialList\MaterialList\obj\Debug\net7.0-windows\MaterialList.Forms.dlgAddItem.resources
 C:\Users\cokerd\OneDrive - Zimmer Biomet\Documents\GitHub\Group\MaterialList\MaterialList\obj\Debug\net7.0-windows\MaterialList.frmBOM.resources
@@ -49,10 +48,8 @@ C:\Users\cokerd\OneDrive - Zimmer Biomet\Documents\GitHub\Group\MaterialList\Mat
 C:\Users\cokerd\OneDrive - Zimmer Biomet\Documents\GitHub\Group\MaterialList\MaterialList\obj\Debug\net7.0-windows\MaterialList.AssemblyInfoInputs.cache
 C:\Users\cokerd\OneDrive - Zimmer Biomet\Documents\GitHub\Group\MaterialList\MaterialList\obj\Debug\net7.0-windows\MaterialList.AssemblyInfo.cs
 C:\Users\cokerd\OneDrive - Zimmer Biomet\Documents\GitHub\Group\MaterialList\MaterialList\obj\Debug\net7.0-windows\MaterialList.csproj.CoreCompileInputs.cache
-C:\Users\cokerd\OneDrive - Zimmer Biomet\Documents\GitHub\Group\MaterialList\MaterialList\obj\Debug\net7.0-windows\MaterialList.csproj.CopyComplete
 C:\Users\cokerd\OneDrive - Zimmer Biomet\Documents\GitHub\Group\MaterialList\MaterialList\obj\Debug\net7.0-windows\MaterialList.dll
 C:\Users\cokerd\OneDrive - Zimmer Biomet\Documents\GitHub\Group\MaterialList\MaterialList\obj\Debug\net7.0-windows\refint\MaterialList.dll
 C:\Users\cokerd\OneDrive - Zimmer Biomet\Documents\GitHub\Group\MaterialList\MaterialList\obj\Debug\net7.0-windows\MaterialList.pdb
 C:\Users\cokerd\OneDrive - Zimmer Biomet\Documents\GitHub\Group\MaterialList\MaterialList\obj\Debug\net7.0-windows\MaterialList.genruntimeconfig.cache
 C:\Users\cokerd\OneDrive - Zimmer Biomet\Documents\GitHub\Group\MaterialList\MaterialList\obj\Debug\net7.0-windows\ref\MaterialList.dll
-C:\Users\cokerd\OneDrive - Zimmer Biomet\Documents\GitHub\Group\MaterialList\MaterialList\bin\Debug\net7.0-windows\Microsoft.Vbe.Interop.dll
