@@ -3,8 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\slpar\\Documents\\Code\\DillonsRepo\\MaterialList\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{F67A3B11-7D3C-4E0B-8CB7-D4E969890C5A}|MaterialList\\MaterialList.csproj|c:\\users\\slpar\\documents\\code\\dillonsrepo\\materiallist\\materiallist\\forms\\frmpartlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F67A3B11-7D3C-4E0B-8CB7-D4E969890C5A}|MaterialList\\MaterialList.csproj|solutionrelative:materiallist\\forms\\frmpartlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{F67A3B11-7D3C-4E0B-8CB7-D4E969890C5A}|MaterialList\\MaterialList.csproj|c:\\users\\slpar\\documents\\code\\dillonsrepo\\materiallist\\materiallist\\bom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F67A3B11-7D3C-4E0B-8CB7-D4E969890C5A}|MaterialList\\MaterialList.csproj|solutionrelative:materiallist\\bom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F67A3B11-7D3C-4E0B-8CB7-D4E969890C5A}|MaterialList\\MaterialList.csproj|c:\\users\\slpar\\documents\\code\\dillonsrepo\\materiallist\\materiallist\\forms\\frmpartlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F67A3B11-7D3C-4E0B-8CB7-D4E969890C5A}|MaterialList\\MaterialList.csproj|solutionrelative:materiallist\\forms\\frmpartlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F67A3B11-7D3C-4E0B-8CB7-D4E969890C5A}|MaterialList\\MaterialList.csproj|c:\\users\\slpar\\documents\\code\\dillonsrepo\\materiallist\\materiallist\\extramethods.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -22,34 +30,8 @@
       "DocumentGroups": [
         {
           "DockedHeight": 311,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 13,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Bom.cs",
-              "DocumentMoniker": "C:\\Users\\slpar\\Documents\\Code\\DillonsRepo\\MaterialList\\MaterialList\\Bom.cs",
-              "RelativeDocumentMoniker": "MaterialList\\Bom.cs",
-              "ToolTip": "C:\\Users\\slpar\\Documents\\Code\\DillonsRepo\\MaterialList\\MaterialList\\Bom.cs",
-              "RelativeToolTip": "MaterialList\\Bom.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAowB0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-11T23:32:26.533Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ExtraMethods.cs",
-              "DocumentMoniker": "C:\\Users\\slpar\\Documents\\Code\\DillonsRepo\\MaterialList\\MaterialList\\ExtraMethods.cs",
-              "RelativeDocumentMoniker": "MaterialList\\ExtraMethods.cs",
-              "ToolTip": "C:\\Users\\slpar\\Documents\\Code\\DillonsRepo\\MaterialList\\MaterialList\\ExtraMethods.cs",
-              "RelativeToolTip": "MaterialList\\ExtraMethods.cs",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAowC8AAABCAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-11T22:38:52.479Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
@@ -101,6 +83,57 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "frmPartList.cs",
+              "DocumentMoniker": "C:\\Users\\slpar\\Documents\\Code\\DillonsRepo\\MaterialList\\MaterialList\\Forms\\frmPartList.cs",
+              "RelativeDocumentMoniker": "MaterialList\\Forms\\frmPartList.cs",
+              "ToolTip": "C:\\Users\\slpar\\Documents\\Code\\DillonsRepo\\MaterialList\\MaterialList\\Forms\\frmPartList.cs",
+              "RelativeToolTip": "MaterialList\\Forms\\frmPartList.cs",
+              "ViewState": "AgIAAF0AAAAAAAAAAAAqwHgAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-12T02:31:25.848Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "frmPartList.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\slpar\\Documents\\Code\\DillonsRepo\\MaterialList\\MaterialList\\Forms\\frmPartList.cs",
+              "RelativeDocumentMoniker": "MaterialList\\Forms\\frmPartList.cs",
+              "ToolTip": "C:\\Users\\slpar\\Documents\\Code\\DillonsRepo\\MaterialList\\MaterialList\\Forms\\frmPartList.cs [Design]",
+              "RelativeToolTip": "MaterialList\\Forms\\frmPartList.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-12T02:30:56.82Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Bom.cs",
+              "DocumentMoniker": "C:\\Users\\slpar\\Documents\\Code\\DillonsRepo\\MaterialList\\MaterialList\\Bom.cs",
+              "RelativeDocumentMoniker": "MaterialList\\Bom.cs",
+              "ToolTip": "C:\\Users\\slpar\\Documents\\Code\\DillonsRepo\\MaterialList\\MaterialList\\Bom.cs",
+              "RelativeToolTip": "MaterialList\\Bom.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAUwBYAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-11T23:32:26.533Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ExtraMethods.cs",
+              "DocumentMoniker": "C:\\Users\\slpar\\Documents\\Code\\DillonsRepo\\MaterialList\\MaterialList\\ExtraMethods.cs",
+              "RelativeDocumentMoniker": "MaterialList\\ExtraMethods.cs",
+              "ToolTip": "C:\\Users\\slpar\\Documents\\Code\\DillonsRepo\\MaterialList\\MaterialList\\ExtraMethods.cs",
+              "RelativeToolTip": "MaterialList\\ExtraMethods.cs",
+              "ViewState": "AgIAACwAAAAAAAAAAAAqwDYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-11T22:38:52.479Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "Item.cs",
               "DocumentMoniker": "C:\\Users\\slpar\\Documents\\Code\\DillonsRepo\\MaterialList\\MaterialList\\Item.cs",
               "RelativeDocumentMoniker": "MaterialList\\Item.cs",
