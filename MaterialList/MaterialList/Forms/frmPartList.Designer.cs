@@ -32,15 +32,18 @@ namespace MaterialList
             components = new System.ComponentModel.Container();
             appPartLIst = new TabControl();
             tbBOM = new TabPage();
+            btnClearBom = new Button();
+            label1 = new Label();
+            txtTotal = new TextBox();
             grdBom = new DataGridView();
-            quantityDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
-            extPriceDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
             itemIDDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
-            nameDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
             itemCategoryDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            nameDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            quantityDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            unitPriceDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            extPriceDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
             materialDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
             descriptionDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
-            unitPriceDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
             itemInfoBindingSource = new BindingSource(components);
             txtQuantity = new TextBox();
             lblQuantity = new Label();
@@ -81,11 +84,14 @@ namespace MaterialList
             appPartLIst.Margin = new Padding(4, 3, 4, 3);
             appPartLIst.Name = "appPartLIst";
             appPartLIst.SelectedIndex = 0;
-            appPartLIst.Size = new Size(905, 492);
+            appPartLIst.Size = new Size(905, 608);
             appPartLIst.TabIndex = 0;
             // 
             // tbBOM
             // 
+            tbBOM.Controls.Add(btnClearBom);
+            tbBOM.Controls.Add(label1);
+            tbBOM.Controls.Add(txtTotal);
             tbBOM.Controls.Add(grdBom);
             tbBOM.Controls.Add(txtQuantity);
             tbBOM.Controls.Add(lblQuantity);
@@ -101,10 +107,38 @@ namespace MaterialList
             tbBOM.Margin = new Padding(4, 3, 4, 3);
             tbBOM.Name = "tbBOM";
             tbBOM.Padding = new Padding(4, 3, 4, 3);
-            tbBOM.Size = new Size(897, 464);
+            tbBOM.Size = new Size(897, 580);
             tbBOM.TabIndex = 0;
             tbBOM.Text = "BOM";
             tbBOM.UseVisualStyleBackColor = true;
+            // 
+            // btnClearBom
+            // 
+            btnClearBom.Location = new Point(293, 8);
+            btnClearBom.Margin = new Padding(4, 3, 4, 3);
+            btnClearBom.Name = "btnClearBom";
+            btnClearBom.Size = new Size(88, 27);
+            btnClearBom.TabIndex = 14;
+            btnClearBom.Text = "Clear";
+            btnClearBom.UseVisualStyleBackColor = true;
+            btnClearBom.Click += btnClearBom_Click;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(708, 554);
+            label1.Name = "label1";
+            label1.Size = new Size(61, 15);
+            label1.TabIndex = 13;
+            label1.Text = "Total Price";
+            // 
+            // txtTotal
+            // 
+            txtTotal.Location = new Point(778, 551);
+            txtTotal.Name = "txtTotal";
+            txtTotal.ReadOnly = true;
+            txtTotal.Size = new Size(112, 23);
+            txtTotal.TabIndex = 12;
             // 
             // grdBom
             // 
@@ -113,33 +147,15 @@ namespace MaterialList
             grdBom.AutoGenerateColumns = false;
             grdBom.BackgroundColor = SystemColors.ControlLight;
             grdBom.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            grdBom.Columns.AddRange(new DataGridViewColumn[] { quantityDataGridViewTextBoxColumn, extPriceDataGridViewTextBoxColumn, itemIDDataGridViewTextBoxColumn, nameDataGridViewTextBoxColumn, itemCategoryDataGridViewTextBoxColumn, materialDataGridViewTextBoxColumn, descriptionDataGridViewTextBoxColumn, unitPriceDataGridViewTextBoxColumn });
+            grdBom.Columns.AddRange(new DataGridViewColumn[] { itemIDDataGridViewTextBoxColumn, itemCategoryDataGridViewTextBoxColumn, nameDataGridViewTextBoxColumn, quantityDataGridViewTextBoxColumn, unitPriceDataGridViewTextBoxColumn, extPriceDataGridViewTextBoxColumn, materialDataGridViewTextBoxColumn, descriptionDataGridViewTextBoxColumn });
             grdBom.DataSource = itemInfoBindingSource;
             grdBom.Location = new Point(8, 173);
             grdBom.Name = "grdBom";
             grdBom.ReadOnly = true;
             grdBom.RowHeadersWidth = 51;
             grdBom.RowTemplate.Height = 25;
-            grdBom.Size = new Size(882, 285);
+            grdBom.Size = new Size(882, 372);
             grdBom.TabIndex = 11;
-            // 
-            // quantityDataGridViewTextBoxColumn
-            // 
-            quantityDataGridViewTextBoxColumn.DataPropertyName = "Quantity";
-            quantityDataGridViewTextBoxColumn.HeaderText = "Quantity";
-            quantityDataGridViewTextBoxColumn.MinimumWidth = 6;
-            quantityDataGridViewTextBoxColumn.Name = "quantityDataGridViewTextBoxColumn";
-            quantityDataGridViewTextBoxColumn.ReadOnly = true;
-            quantityDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // extPriceDataGridViewTextBoxColumn
-            // 
-            extPriceDataGridViewTextBoxColumn.DataPropertyName = "ExtPrice";
-            extPriceDataGridViewTextBoxColumn.HeaderText = "ExtPrice";
-            extPriceDataGridViewTextBoxColumn.MinimumWidth = 6;
-            extPriceDataGridViewTextBoxColumn.Name = "extPriceDataGridViewTextBoxColumn";
-            extPriceDataGridViewTextBoxColumn.ReadOnly = true;
-            extPriceDataGridViewTextBoxColumn.Width = 125;
             // 
             // itemIDDataGridViewTextBoxColumn
             // 
@@ -150,6 +166,15 @@ namespace MaterialList
             itemIDDataGridViewTextBoxColumn.ReadOnly = true;
             itemIDDataGridViewTextBoxColumn.Width = 125;
             // 
+            // itemCategoryDataGridViewTextBoxColumn
+            // 
+            itemCategoryDataGridViewTextBoxColumn.DataPropertyName = "ItemCategory";
+            itemCategoryDataGridViewTextBoxColumn.HeaderText = "ItemCategory";
+            itemCategoryDataGridViewTextBoxColumn.MinimumWidth = 6;
+            itemCategoryDataGridViewTextBoxColumn.Name = "itemCategoryDataGridViewTextBoxColumn";
+            itemCategoryDataGridViewTextBoxColumn.ReadOnly = true;
+            itemCategoryDataGridViewTextBoxColumn.Width = 125;
+            // 
             // nameDataGridViewTextBoxColumn
             // 
             nameDataGridViewTextBoxColumn.DataPropertyName = "Name";
@@ -159,14 +184,32 @@ namespace MaterialList
             nameDataGridViewTextBoxColumn.ReadOnly = true;
             nameDataGridViewTextBoxColumn.Width = 125;
             // 
-            // itemCategoryDataGridViewTextBoxColumn
+            // quantityDataGridViewTextBoxColumn
             // 
-            itemCategoryDataGridViewTextBoxColumn.DataPropertyName = "ItemCategory";
-            itemCategoryDataGridViewTextBoxColumn.HeaderText = "ItemCategory";
-            itemCategoryDataGridViewTextBoxColumn.MinimumWidth = 6;
-            itemCategoryDataGridViewTextBoxColumn.Name = "itemCategoryDataGridViewTextBoxColumn";
-            itemCategoryDataGridViewTextBoxColumn.ReadOnly = true;
-            itemCategoryDataGridViewTextBoxColumn.Width = 125;
+            quantityDataGridViewTextBoxColumn.DataPropertyName = "Quantity";
+            quantityDataGridViewTextBoxColumn.HeaderText = "Quantity";
+            quantityDataGridViewTextBoxColumn.MinimumWidth = 6;
+            quantityDataGridViewTextBoxColumn.Name = "quantityDataGridViewTextBoxColumn";
+            quantityDataGridViewTextBoxColumn.ReadOnly = true;
+            quantityDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // unitPriceDataGridViewTextBoxColumn
+            // 
+            unitPriceDataGridViewTextBoxColumn.DataPropertyName = "UnitPrice";
+            unitPriceDataGridViewTextBoxColumn.HeaderText = "UnitPrice";
+            unitPriceDataGridViewTextBoxColumn.MinimumWidth = 6;
+            unitPriceDataGridViewTextBoxColumn.Name = "unitPriceDataGridViewTextBoxColumn";
+            unitPriceDataGridViewTextBoxColumn.ReadOnly = true;
+            unitPriceDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // extPriceDataGridViewTextBoxColumn
+            // 
+            extPriceDataGridViewTextBoxColumn.DataPropertyName = "ExtPrice";
+            extPriceDataGridViewTextBoxColumn.HeaderText = "ExtPrice";
+            extPriceDataGridViewTextBoxColumn.MinimumWidth = 6;
+            extPriceDataGridViewTextBoxColumn.Name = "extPriceDataGridViewTextBoxColumn";
+            extPriceDataGridViewTextBoxColumn.ReadOnly = true;
+            extPriceDataGridViewTextBoxColumn.Width = 125;
             // 
             // materialDataGridViewTextBoxColumn
             // 
@@ -186,15 +229,6 @@ namespace MaterialList
             descriptionDataGridViewTextBoxColumn.ReadOnly = true;
             descriptionDataGridViewTextBoxColumn.Width = 125;
             // 
-            // unitPriceDataGridViewTextBoxColumn
-            // 
-            unitPriceDataGridViewTextBoxColumn.DataPropertyName = "UnitPrice";
-            unitPriceDataGridViewTextBoxColumn.HeaderText = "UnitPrice";
-            unitPriceDataGridViewTextBoxColumn.MinimumWidth = 6;
-            unitPriceDataGridViewTextBoxColumn.Name = "unitPriceDataGridViewTextBoxColumn";
-            unitPriceDataGridViewTextBoxColumn.ReadOnly = true;
-            unitPriceDataGridViewTextBoxColumn.Width = 125;
-            // 
             // itemInfoBindingSource
             // 
             itemInfoBindingSource.DataSource = typeof(BomItem);
@@ -204,7 +238,7 @@ namespace MaterialList
             txtQuantity.Location = new Point(103, 115);
             txtQuantity.Margin = new Padding(4, 3, 4, 3);
             txtQuantity.Name = "txtQuantity";
-            txtQuantity.Size = new Size(116, 23);
+            txtQuantity.Size = new Size(182, 23);
             txtQuantity.TabIndex = 10;
             // 
             // lblQuantity
@@ -233,7 +267,7 @@ namespace MaterialList
             cmbPartNo.Location = new Point(102, 85);
             cmbPartNo.Margin = new Padding(4, 3, 4, 3);
             cmbPartNo.Name = "cmbPartNo";
-            cmbPartNo.Size = new Size(238, 23);
+            cmbPartNo.Size = new Size(183, 23);
             cmbPartNo.TabIndex = 7;
             // 
             // lblClass
@@ -252,18 +286,18 @@ namespace MaterialList
             cmbCategory.Location = new Point(103, 53);
             cmbCategory.Margin = new Padding(4, 3, 4, 3);
             cmbCategory.Name = "cmbCategory";
-            cmbCategory.Size = new Size(140, 23);
+            cmbCategory.Size = new Size(182, 23);
             cmbCategory.TabIndex = 5;
             cmbCategory.SelectedIndexChanged += cmbClass_SelectedIndexChanged;
             // 
             // btnPrint
             // 
-            btnPrint.Location = new Point(293, 8);
+            btnPrint.Location = new Point(389, 8);
             btnPrint.Margin = new Padding(4, 3, 4, 3);
             btnPrint.Name = "btnPrint";
             btnPrint.Size = new Size(88, 27);
             btnPrint.TabIndex = 4;
-            btnPrint.Text = "Export to CSV";
+            btnPrint.Text = "Save";
             btnPrint.UseVisualStyleBackColor = true;
             btnPrint.Click += btnPrint_Click;
             // 
@@ -310,7 +344,7 @@ namespace MaterialList
             tabItemMaster.Margin = new Padding(4, 3, 4, 3);
             tabItemMaster.Name = "tabItemMaster";
             tabItemMaster.Padding = new Padding(4, 3, 4, 3);
-            tabItemMaster.Size = new Size(897, 464);
+            tabItemMaster.Size = new Size(897, 580);
             tabItemMaster.TabIndex = 1;
             tabItemMaster.Text = "Item Master";
             tabItemMaster.UseVisualStyleBackColor = true;
@@ -338,7 +372,7 @@ namespace MaterialList
             grdItems.ReadOnly = true;
             grdItems.RowHeadersWidth = 51;
             grdItems.RowTemplate.Height = 25;
-            grdItems.Size = new Size(882, 416);
+            grdItems.Size = new Size(882, 532);
             grdItems.TabIndex = 12;
             // 
             // itemIDDataGridViewTextBoxColumn1
@@ -425,7 +459,7 @@ namespace MaterialList
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(933, 519);
+            ClientSize = new Size(933, 634);
             Controls.Add(appPartLIst);
             Margin = new Padding(4, 3, 4, 3);
             Name = "frmBOM";
@@ -475,15 +509,18 @@ namespace MaterialList
         private DataGridViewTextBoxColumn materialDataGridViewTextBoxColumn1;
         private DataGridViewTextBoxColumn dataGridViewTextBoxColumn10;
         private DataGridViewTextBoxColumn dataGridViewTextBoxColumn11;
-        private DataGridViewTextBoxColumn quantityDataGridViewTextBoxColumn;
-        private DataGridViewTextBoxColumn extPriceDataGridViewTextBoxColumn;
+        private Button btnEdit;
+        private TextBox txtTotal;
         private DataGridViewTextBoxColumn itemIDDataGridViewTextBoxColumn;
-        private DataGridViewTextBoxColumn nameDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn itemCategoryDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn nameDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn quantityDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn unitPriceDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn extPriceDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn materialDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn descriptionDataGridViewTextBoxColumn;
-        private DataGridViewTextBoxColumn unitPriceDataGridViewTextBoxColumn;
-        private Button btnEdit;
+        private Label label1;
+        private Button btnClearBom;
     }
 }
 
