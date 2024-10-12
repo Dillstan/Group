@@ -326,6 +326,8 @@ namespace MaterialList
             // 
             // grdItems
             // 
+            grdItems.AllowUserToAddRows = false;
+            grdItems.AllowUserToDeleteRows = false;
             grdItems.AutoGenerateColumns = false;
             grdItems.BackgroundColor = SystemColors.ControlLight;
             grdItems.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -333,6 +335,7 @@ namespace MaterialList
             grdItems.DataSource = itemMasterBindingSource;
             grdItems.Location = new Point(7, 42);
             grdItems.Name = "grdItems";
+            grdItems.ReadOnly = true;
             grdItems.RowHeadersWidth = 51;
             grdItems.RowTemplate.Height = 25;
             grdItems.Size = new Size(882, 416);
@@ -344,6 +347,7 @@ namespace MaterialList
             itemIDDataGridViewTextBoxColumn1.HeaderText = "ItemID";
             itemIDDataGridViewTextBoxColumn1.MinimumWidth = 6;
             itemIDDataGridViewTextBoxColumn1.Name = "itemIDDataGridViewTextBoxColumn1";
+            itemIDDataGridViewTextBoxColumn1.ReadOnly = true;
             itemIDDataGridViewTextBoxColumn1.Width = 125;
             // 
             // dataGridViewTextBoxColumn9
@@ -352,6 +356,7 @@ namespace MaterialList
             dataGridViewTextBoxColumn9.HeaderText = "Name";
             dataGridViewTextBoxColumn9.MinimumWidth = 6;
             dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
+            dataGridViewTextBoxColumn9.ReadOnly = true;
             dataGridViewTextBoxColumn9.Width = 125;
             // 
             // itemCategoryDataGridViewTextBoxColumn1
@@ -360,6 +365,7 @@ namespace MaterialList
             itemCategoryDataGridViewTextBoxColumn1.HeaderText = "ItemCategory";
             itemCategoryDataGridViewTextBoxColumn1.MinimumWidth = 6;
             itemCategoryDataGridViewTextBoxColumn1.Name = "itemCategoryDataGridViewTextBoxColumn1";
+            itemCategoryDataGridViewTextBoxColumn1.ReadOnly = true;
             itemCategoryDataGridViewTextBoxColumn1.Width = 125;
             // 
             // materialDataGridViewTextBoxColumn1
@@ -368,6 +374,7 @@ namespace MaterialList
             materialDataGridViewTextBoxColumn1.HeaderText = "Material";
             materialDataGridViewTextBoxColumn1.MinimumWidth = 6;
             materialDataGridViewTextBoxColumn1.Name = "materialDataGridViewTextBoxColumn1";
+            materialDataGridViewTextBoxColumn1.ReadOnly = true;
             materialDataGridViewTextBoxColumn1.Width = 125;
             // 
             // dataGridViewTextBoxColumn10
@@ -376,6 +383,7 @@ namespace MaterialList
             dataGridViewTextBoxColumn10.HeaderText = "Description";
             dataGridViewTextBoxColumn10.MinimumWidth = 6;
             dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
+            dataGridViewTextBoxColumn10.ReadOnly = true;
             dataGridViewTextBoxColumn10.Width = 125;
             // 
             // dataGridViewTextBoxColumn11
@@ -384,6 +392,7 @@ namespace MaterialList
             dataGridViewTextBoxColumn11.HeaderText = "UnitPrice";
             dataGridViewTextBoxColumn11.MinimumWidth = 6;
             dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
+            dataGridViewTextBoxColumn11.ReadOnly = true;
             dataGridViewTextBoxColumn11.Width = 125;
             // 
             // itemMasterBindingSource
