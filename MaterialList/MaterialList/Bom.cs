@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Globalization;
 using System.Linq;
 using System.Text;
@@ -46,34 +47,6 @@ namespace MaterialList
             }
         }
 
-        public List<BomItem> OpenCsv(string filePath)
-        {
-            using (StreamReader reader = new StreamReader(filePath))
-            {
 
-                string headerLine = reader.ReadLine();
-
-                string recordIn = reader.ReadLine();
-                while ((recordIn  != null))
-                {
-                    string[] values = recordIn.Split(',');
-
-                    BomItem bomItem = new BomItem
-                    {
-                        ItemID = long.Parse(values[0]),
-                        Name = values[1],
-                        ItemCategory = Enum.Parse<Category>(values[2]),
-                        Material = values[3],
-                        Description = values[4],
-                        UnitPrice = decimal.Parse(values[5], CultureInfo.InvariantCulture),
-                        Quantity = int.Parse(values[6])
-                    };
-
-                    BomItems.Add(bomItem);
-                }
-            }
-
-            return BomItems;
-        }
     }
 }

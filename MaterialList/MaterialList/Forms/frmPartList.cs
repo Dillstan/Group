@@ -117,7 +117,8 @@ namespace MaterialList
                     mainBom.Customer = "Test Customer";
                     mainBom.Employee = "Dat Employee";
                     mainBom.BomItems = BomItems.ToList();
-                    ExtraMethods.SaveToCSV(mainBom, matl.SelectedPath);
+                    // ExtraMethods.SaveToCSV(mainBom, matl.SelectedPath);
+                    mainBom.SaveToCsv(matl.SelectedPath);
                 }
             }
         }
@@ -144,7 +145,7 @@ namespace MaterialList
             }
 
             //set item master and refresh bindings
-            itemMaster = ExtraMethods.OpenCSV(lblPath.Text);
+            itemMaster = ExtraMethods.OpenCsv(lblPath.Text);
 
             RefreshBindings();
         }
