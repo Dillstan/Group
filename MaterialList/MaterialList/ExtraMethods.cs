@@ -45,7 +45,11 @@ namespace MaterialList
         public static void SaveToCSV(Bom BomData, string filePath)
         {
             // Do the thing
+            var bom = BomData;
+            string customer = bom.Customer;
+            string employee = bom.Employee;
 
+            
 
         }
 
